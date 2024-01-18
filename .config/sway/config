@@ -24,9 +24,10 @@ set $menu dmenu_path | dmenu -m "$(swaymsg -t get_outputs | jq 'map(.focused) | 
 #
 # Default wallpaper (more resolutions are available in /run/current-system/sw/share/backgrounds/sway/)
 #output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-#output * bg /home/kaaden/Pictures/lafemmedamneepatch.jpg fit
-#output * bg /home/kaaden/Pictures/blurrabel.jpg fill
-output * bg /home/kaaden/Pictures/jupiter.jpg fill
+#output * bg /home/kaaden/Pictures/wallpaper/lafemmedamneepatch.jpg fit
+#output * bg /home/kaaden/Pictures/wallpaper/blurrabel.jpg fill
+#output * bg /home/kaaden/Pictures/wallpaper/jupiter.jpg fill
+output * bg ~/Pictures/wallpaper/trolley.jpg fit
 #
 # Example configuration:
 #
