@@ -167,7 +167,11 @@ in
       steam-run
       protonup-qt
       cmatrix
+
       cowsay
+      termdown
+      fortune
+
       discord
       geekbench
       htop
