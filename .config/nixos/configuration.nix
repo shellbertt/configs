@@ -173,6 +173,7 @@ in
       fortune
 
       discord
+      webcord
       geekbench
       htop
       neofetch
