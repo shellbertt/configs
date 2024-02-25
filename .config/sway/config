@@ -249,6 +249,10 @@ bar {
     }
 }
 
+# screenshot
 bindsym $mod+Shift+S exec 'file=$SCREENSHOTS/"$(date "+%F_%T")".png; grim -g "$(slurp)" $file && cat $file | wl-copy'
+
+# lock
+bindsym $mod+Alt+L exec "~/scripts/suspend.sh"
 
 include /etc/sway/config.d/*
