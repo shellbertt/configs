@@ -167,6 +167,7 @@ in
       steam-run
       protonup-qt
       cmatrix
+      vscode
 
       cowsay
       termdown
