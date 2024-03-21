@@ -4,6 +4,8 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+default_border normal 0
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -24,12 +26,13 @@ set $menu dmenu_path | dmenu -m "$(swaymsg -t get_outputs | jq 'map(.focused) | 
 #
 # Default wallpaper (more resolutions are available in /run/current-system/sw/share/backgrounds/sway/)
 #output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-#output * bg /home/kaaden/Pictures/wallpaper/lafemmedamneepatch.jpg fit
-#output * bg /home/kaaden/Pictures/wallpaper/blurrabel.jpg fill
-#output * bg /home/kaaden/Pictures/wallpaper/jupiter.jpg fill
-#output * bg ~/Pictures/wallpaper/trolley.jpg fit
-#output * bg ~/Pictures/wallpaper/space.png center
-output * bg ~/Pictures/4swordstyle.png tile
+#output * bg /home/kaaden/pictures/wallpaper/lafemmedamneepatch.jpg fit
+#output * bg /home/kaaden/pictures/wallpaper/blurrabel.jpg fill
+#output * bg /home/kaaden/pictures/wallpaper/jupiter.jpg fill
+#output * bg ~/pictures/wallpaper/trolley.jpg fit
+#output * bg ~/pictures/wallpaper/space.png center
+#output * bg ~/pictures/4swordstyle.png tile
+output * bg ~/pictures/wallpaper/thompson-large.jpg fill
 #
 # Example configuration:
 #
