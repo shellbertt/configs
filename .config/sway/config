@@ -40,7 +40,8 @@ output * bg ~/pictures/wallpaper/thompson-large.jpg fill
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 set $output_left "ASUSTek COMPUTER INC ASUS VG249 0x0000CFC1" 
-set $output_right "Lenovo Group Limited LEN LT2452pwC VN-808325" 
+#set $output_right "Lenovo Group Limited LEN LT2452pwC VN-808325" 
+set $output_right "IBM Brasil IBM T860 66-T5155" 
 output $output_left position 0,0
 output $output_right position 1920,0
 
