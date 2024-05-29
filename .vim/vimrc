@@ -4,6 +4,7 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set number
+set relativenumber
 set ruler
 set hlsearch
 set splitright
@@ -13,3 +14,5 @@ inoremap jk <Esc>
 inoremap kj <Esc>
 nnoremap <C-S> :w \| !clear && pypy3 % < %:r.eg && echo "-----------" && pypy3 % < %:r.in<CR>
 nnoremap <Esc><C-S> :w \| !clear && pypy3 % < %:r.eg<CR>
+nnoremap n nzz
+nnoremap N Nzz
