@@ -172,8 +172,13 @@ input "9610:54:Glorious_Model_O" {
     bindsym $mod+Alt+Right move workspace to output $output_right 
     bindsym $mod+Alt+Left move workspace to output $output_left 
 
+    # lock mouse to main screen
     bindsym $mod+T input 9610:54:Glorious_Model_O map_to_region 0 0 1919 1080
     bindsym $mod+Shift+T input 9610:54:Glorious_Model_O map_to_region 0 0 3840 1200
+
+    # disable main screen when switch to other computer
+    bindsym $mod+Escape output $output_left toggle
+
 #
 # Layout stuff:
 #
