@@ -39,7 +39,7 @@ output * bg ~/pictures/wallpaper/thompson-large.jpg fill
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-set $output_left "ASUSTek COMPUTER INC ASUS VG249 0x0000CFC1" 
+set $output_left "ASUSTek COMPUTER INC ASUS VG249 0x0002CDC1" 
 #set $output_right "Lenovo Group Limited LEN LT2452pwC VN-808325" 
 set $output_right "IBM Brasil IBM T860 66-T5155" 
 output $output_left position 0,0
@@ -166,7 +166,7 @@ input "9610:54:Glorious_Model_O" {
     bindsym $mod+Shift+8 move container to workspace number 8; workspace number 8
     bindsym $mod+Shift+9 move container to workspace number 9; workspace number 9
     bindsym $mod+Shift+0 move container to workspace number 10; workspace number 10
-    bindsym $mod+Shift+n exec swaymsg move container to workspace number $(sh ~/.config/sway/MEX_workspace.sh); exec swaymsg workspace number $(sh ~/.config/sway/MEX_workspace.sh)
+    bindsym $mod+Shift+n exec rm ~/.config/sway/mexw/* && touch ~/.config/sway/mexw/$(sh ~/.config/sway/MEX_workspace.sh) && swaymsg move container to workspace number $(ls ~/.config/sway/mexw/) && swaymsg workspace number $(ls ~/.config/sway/mexw/)
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
     bindsym $mod+Alt+Right move workspace to output $output_right 
