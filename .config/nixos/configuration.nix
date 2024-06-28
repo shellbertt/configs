@@ -162,7 +162,6 @@ in
       firefox
       tree
       pypy3
-      minecraft
       steam
       steam-run
       protonup-qt
