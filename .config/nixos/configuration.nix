@@ -190,6 +190,8 @@ in
       libsForQt5.okular # pdf reader
       sioyek # pdf reader
       pdfarranger
+      espeak
+      unzip
     ];
   };
 
