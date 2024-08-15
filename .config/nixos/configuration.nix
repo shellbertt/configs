@@ -179,10 +179,13 @@ in
       neofetch
       lunar-client
       appimage-run
+
       gnat13 # g++
       gdb
       gnumake
       valgrind
+      rustup
+
       spotify
       vimgolf
       gimp
