@@ -1,3 +1,4 @@
+echo ".profile"
 export SCREENSHOTS=~/Pictures/screenshots
 
 export PATH=/home/kaaden/.local/bin:$PATH

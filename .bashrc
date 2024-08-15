@@ -1,3 +1,4 @@
+echo ".bashrc"
 export HISTFILESIZE=50000000
 export HISTSIZE=5000000
 
