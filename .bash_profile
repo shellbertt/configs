@@ -1,4 +1,4 @@
-export SCREENSHOTS=~/pictures/screenshots
+export SCREENSHOTS=~/Pictures/screenshots
 
 export PATH=/home/kaaden/.local/bin:$PATH
 export PATH=/home/kaaden/scripts:$PATH
