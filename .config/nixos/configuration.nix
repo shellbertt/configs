@@ -71,7 +71,7 @@ in
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
   # Set your time zone.
-  time.timeZone = "Canada/Eastern";
+  time.timeZone = "Canada/Mountain";
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -185,6 +185,8 @@ in
       gnumake
       valgrind
       rustup
+      universal-ctags
+      silver-searcher
 
       spotify
       vimgolf
@@ -207,6 +209,7 @@ in
     curl
 
     alacritty # gpu accelerated terminal
+    gnome.gnome-terminal
     dbus-sway-environment
     configure-gtk
     wayland
