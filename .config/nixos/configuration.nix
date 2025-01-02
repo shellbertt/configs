@@ -197,6 +197,9 @@ in
       pdfarranger
       espeak
       unzip
+      fzf
+      alsa-utils
+      lm_sensors
     ];
   };
 
