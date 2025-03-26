@@ -1,18 +1,66 @@
 syntax on
+set backspace=indent,eol,start
 set smartindent
 set tabstop=4
 set expandtab
 set shiftwidth=4
 set number
-set relativenumber
-set ruler
 set hlsearch
 set splitright
+set ruler
+set nowrap
+set laststatus=2
+set tags=./tags;/
 command T vert term
+
 tab all
-inoremap jk <Esc>
-inoremap kj <Esc>
+
 nnoremap <C-S> :w \| !clear && pypy3 % < %:r.eg && echo "-----------" && pypy3 % < %:r.in<CR>
 nnoremap <Esc><C-S> :w \| !clear && pypy3 % < %:r.eg<CR>
 nnoremap n nzz
 nnoremap N Nzz
+
+" still holding shift whoopsies
+command W w
+command Q q
+command Wa wa
+command Wq wq
+command Wqa wqa
+
+" visual scroll
+nmap j gj
+nmap k gk
+
+" jump up to function header
+noremap ,f ?^[^ \t#/]<CR>
+
+" diff current file
+nmap ,d :w !git diff --no-index -- % -<CR>
+command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis | normal <c-w>x
+nmap ,D :DiffOrig<CR>
+
+" scratch
+command Scratch vert new | set bt=nofile
+nmap ,S :Scratch<CR>
+
+" jump to definition
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+" comment line
+map ,c :norm 0i// <CR>
+map <C :s/^\/\/ //<CR>
+
+" status line
+let g:word_count=wordcount().words
+function WordCount()
+    if has_key(wordcount(),'visual_words')
+        let g:word_count=wordcount().visual_words."/".wordcount().words " count selected words
+    else
+        let g:word_count=wordcount().cursor_words."/".wordcount().words " or shows words 'so far'
+    endif
+    return g:word_count
+endfunction
+set laststatus=2
+set statusline+=%f\ %{WordCount()}
+map ,l :!cd ../../ && dotnet format dummy.csproj --no-restore --verbosity diagnostic --include Assets/Scripts/%<CR>
