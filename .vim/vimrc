@@ -50,6 +50,7 @@ map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 " comment line
 map ,c :norm 0i// <CR>
 map <C :s/^\/\/ //<CR>
+"map <C :s/^\(\s*\)\/\/s\?/\1/<CR> WIP
 
 " status line
 let g:word_count=wordcount().words
