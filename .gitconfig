@@ -1,0 +1,9 @@
+[user]
+	email = kaadenruman@hotmail.com
+	name = Kaaden RumanCam
+[core]
+	editor = vim
+[push]
+	autoSetupRemote = true
+[alias]
+    conflict = "!f() { git merge $1 --no-ff --no-commit && git merge --abort; }; f"
