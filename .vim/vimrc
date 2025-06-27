@@ -65,3 +65,6 @@ endfunction
 set laststatus=2
 set statusline+=%f\ %{WordCount()}
 map ,l :!cd ../../ && dotnet format dummy.csproj --no-restore --verbosity diagnostic --include Assets/Scripts/%<CR>
+
+" Switch to tab by name with :sb <file>
+set switchbuf=useopen,usetab
