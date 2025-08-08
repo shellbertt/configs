@@ -68,3 +68,9 @@ map ,l :!cd ../../ && dotnet format dummy.csproj --no-restore --verbosity diagno
 
 " Switch to tab by name with :sb <file>
 set switchbuf=useopen,usetab
+
+" Removed buffers from default, I only care about tabs!
+set sessionoptions=blank,curdir,folds,help,tabpages,winsize,terminal
+
+" Can actually find files
+set path+=,**,
