@@ -178,6 +178,7 @@ in
       protonup-qt
       cmatrix
       vscode
+      tmux
 
       cowsay
       termdown
@@ -190,6 +191,7 @@ in
       neofetch
       lunar-client
       appimage-run
+      tetrio-desktop
 
       gnat13 # g++
       gdb
