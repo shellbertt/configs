@@ -133,6 +133,10 @@ in
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
+  xdg.mime.defaultApplications = {
+      "default-web-browser"           = [ "librewolf.desktop" ];
+  };
+
   hardware.opengl.enable = true;
 
   # enable sway window manager
@@ -164,6 +168,7 @@ in
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
       firefox
+      librewolf
       tree
       pypy3
       steam
