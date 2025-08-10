@@ -49,6 +49,8 @@ in
 
 {
 
+      i18n.defaultLocale = "en_US.UTF-8";
+
   #nix.nixPath = lib.mkBefore (lib.mkOptionDefault [ "nixos-config=/home/kaaden/.config/nixos/configuration.nix" ]);
   nix.nixPath = [
     "nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos"
