@@ -12,5 +12,7 @@ export EDITOR="vim";
 export CPLUS_INCLUDE_PATH=~/cp/kactl/content/:~/cp/kactl/content/test-session:~/cp/kactl/content/tex:~/cp/kactl/content/contest:~/cp/kactl/content/data-structures:~/cp/kactl/content/numerical:~/cp/kactl/content/appendix:~/cp/kactl/content/various:~/cp/kactl/content/graph:~/cp/kactl/content/geometry:~/cp/kactl/content/strings:~/cp/kactl/content/combinatorial:~/cp/kactl/content/math:~/cp/kactl/content/number-theory
 export PATH=~/.cargo/bin/:$PATH
 
+stty -ixon # go forward again in reverse-i search
+
 dir () { mkdir $1 && cd $1; }
 
