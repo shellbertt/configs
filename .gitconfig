@@ -8,4 +8,4 @@
 [alias]
     conflict = "!f() { git merge $1 --no-ff --no-commit; git diff; git merge --abort; }; f"
     try-rebase = "!f() { git checkout -b test; git rebase main; git diff; git rebase --abort; git switch -; git branch -D test; }; f"
-    diff-remote = "!f() { git diff $1 origin/$1; git branch -d $1; git branch $1 origin/$1; }; f"
+    diff-remote = "!f() { git diff $1...$1@{upstream}; }; f"
